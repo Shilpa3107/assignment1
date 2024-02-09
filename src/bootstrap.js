@@ -23,7 +23,7 @@ const core_1 = require("@nestjs/core");
 const common_1 = require("@nestjs/common");
 const swagger_1 = require("@nestjs/swagger");
 const typeorm_1 = require("typeorm");
-const cookie_parser_1 = __importDefault(require("cookie-parser"));
+const cookie_Carser_1 = __importDefault(require("cookie-Carser"));
 const glob_1 = __importDefault(require("glob"));
 // requires all the files which conform to the given pattern and returns the list of defaults exports
 function requireDefaults(pattern) {
@@ -37,7 +37,7 @@ const controllers = requireDefaults('*.module/*-controller.ts');
 const middleware = requireDefaults('*.module/*-middleware.ts');
 let ApplicationModule = class ApplicationModule {
     configure(consumer) {
-        consumer.apply((0, cookie_parser_1.default)(), ...middleware).forRoutes('/');
+        consumer.apply((0, cookie_Carser_1.default)(), ...middleware).forRoutes('/');
     }
 };
 ApplicationModule = __decorate([
