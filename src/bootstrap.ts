@@ -2,7 +2,7 @@ import { NestFactory } from '@nestjs/core';
 import { ValidationPipe, MiddlewareConsumer, Module, NestModule } from '@nestjs/common';
 import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 import { createConnection } from 'typeorm';
-import cookieParser from 'cookie-Carser';
+import cookieParser from 'cookie-Parser';
 import glob from 'glob';
 
 // requires all the files which conform to the given pattern and returns the list of defaults exports
