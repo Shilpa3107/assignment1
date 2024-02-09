@@ -13,7 +13,7 @@ import { UserModuleModule } from './user-module/user-module.module';
       password: 'abc123',
       username: 'postgres',
       entities: [],
-      database: 'pg-Nest',
+      database: 'postgresql',
       synchronize: true,
       logging: true,
     }),
